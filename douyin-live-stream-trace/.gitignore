@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# 采集数据（运行时生成）
+captures/
+
+# 报告（运行时生成）
+reports/
+
+# IDE 配置
+.claude/
+.opencode/
+.playwright-mcp/
+.sisyphus/
+.worktrees/
+.serena/
+CLAUDE.md
+AGENTS.md
+
+# 构建产物
+build/
+dist/
+
+# 开发笔记
+docs/superpowers/
+
+# 敏感文档
+抖音直播接口文档.md

@@ -1,0 +1,66 @@
+[
+  {
+    "keyword": "mcp_vcloud",
+    "name": "字节 MCP 直播云（MCP_VCLOUD）"
+  },
+  {
+    "keyword": "live-source-play",
+    "name": "小红书源流 CDN（live-source-play.xhscdn.com）"
+  },
+  {
+    "keyword": "vcloud",
+    "name": "字节/火山直播云"
+  },
+  {
+    "keyword": "xhscdn",
+    "name": "小红书 CDN（xhscdn.com）"
+  },
+  {
+    "keyword": "xiaohongshu",
+    "name": "小红书"
+  },
+  {
+    "keyword": "xhs",
+    "name": "小红书系域名"
+  },
+  {
+    "keyword": "qcloud",
+    "name": "腾讯云 CDN"
+  },
+  {
+    "keyword": "myqcloud",
+    "name": "腾讯云 CDN"
+  },
+  {
+    "keyword": "alicdn",
+    "name": "阿里云 CDN"
+  },
+  {
+    "keyword": "aliyun",
+    "name": "阿里云"
+  },
+  {
+    "keyword": "wscloudcdn",
+    "name": "网宿 CDN（wscloudcdn）"
+  },
+  {
+    "keyword": "wsdvs",
+    "name": "网宿 CDN"
+  },
+  {
+    "keyword": "byteimg",
+    "name": "字节 CDN"
+  },
+  {
+    "keyword": "bytedance",
+    "name": "字节跳动"
+  },
+  {
+    "keyword": "hilive",
+    "name": "华为云直播 CDN"
+  },
+  {
+    "keyword": "cdn",
+    "name": "通用 CDN"
+  }
+]

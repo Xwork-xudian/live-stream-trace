@@ -1,0 +1,13 @@
+# rtmp-h264-stream-trace — Python 依赖
+
+# 核心（探测 / 录制 / 报告）只依赖标准库 + ffmpeg/ffprobe，无需第三方包。
+# requests 用于可选的 URL 探测扩展与统一项目联动。
+requests>=2.31
+
+# 可选：内容级（人脸嘴型）音画同步需要 numpy + opencv。
+# 未安装时会自动跳过该分析并在报告中说明，不影响其它体检项。
+#   numpy>=1.26
+#   opencv-python-headless>=4.9
+
+# ffmpeg / ffprobe 需单独安装（本环境自带）：
+#   /opt/ffmpeg/bin/{ffmpeg,ffprobe}

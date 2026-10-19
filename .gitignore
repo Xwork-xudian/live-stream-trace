@@ -1,0 +1,31 @@
+# ---- 虚拟环境 / 依赖 ----
+**/.venv/
+**/__pycache__/
+*.pyc
+node_modules/
+**/site-packages/
+
+# ---- 运行产物（体积大、可再生产）----
+**/captures/
+**/reports/
+**/uploads/
+**/tests/.out/
+**/.ekko-tmp/
+.ekko-tmp*
+
+# ---- 凭据（绝不入库）----
+**/cookies/
+*.cookie
+.env
+*.pem
+*.key
+
+# ---- 其它 ----
+*.log
+*.bgr
+*.tmp
+.DS_Store
+
+# ---- 报告快照备份（含第三方样本，绝不入库）----
+**/reports.bak/
+**/reports*/

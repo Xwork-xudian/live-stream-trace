@@ -1,0 +1,16 @@
+# douyin-live-stream-trace — Python 依赖
+# 必需
+requests>=2.31
+
+# 可选：浏览器自动化鉴权（自动处理 msToken / a_bogus 签名）
+# 安装后还需执行: python -m playwright install chromium
+playwright>=1.40
+
+# 可选：音画同步「内容级（人脸嘴型）」检测（--no-lip-sync 可关闭，默认开启）
+# 缺失时自动降级并在报告/终端提示，不影响其它步骤。
+# 国内网络建议用镜像安装：
+#   ./.venv/bin/python -m pip install -i https://mirrors.aliyun.com/pypi/simple/ \
+#       --trusted-host mirrors.aliyun.com numpy opencv-python-headless
+# 注意：opencv 5.x 已移除内置 Haar 级联，请使用 4.x（如 4.13.0.92）。
+# numpy>=1.26
+# opencv-python-headless>=4.9,<5

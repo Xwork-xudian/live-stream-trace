@@ -1,0 +1,12 @@
+[
+  {"pattern": "streamlabs", "name": "Streamlabs OBS"},
+  {"pattern": "obs(?:\\s+studio)?", "name": "OBS Studio"},
+  {"pattern": "xsplit", "name": "XSplit"},
+  {"pattern": "vmix", "name": "vMix"},
+  {"pattern": "wirecast", "name": "Wirecast"},
+  {"pattern": "ffmpeg|libx264|lavf|librtmp", "name": "FFmpeg / libRTMP"},
+  {"pattern": "fmle|flash media live encoder", "name": "Adobe FMLE"},
+  {"pattern": "prism", "name": "PRISM Live Studio"},
+  {"pattern": "douyin|bytedance|bytemedia", "name": "抖音 / 字节系推流组件"},
+  {"pattern": "bytedmediasdk|byted.*media.*sdk", "name": "抖音直播伴侣 (ByteDance Media SDK)"}
+]

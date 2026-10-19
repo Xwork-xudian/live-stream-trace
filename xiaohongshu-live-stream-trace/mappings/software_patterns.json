@@ -1,0 +1,78 @@
+[
+  {
+    "pattern": "obs(?:\\s+studio)?",
+    "name": "OBS Studio"
+  },
+  {
+    "pattern": "streamlabs",
+    "name": "Streamlabs OBS"
+  },
+  {
+    "pattern": "xsplit",
+    "name": "XSplit"
+  },
+  {
+    "pattern": "vmix",
+    "name": "vMix"
+  },
+  {
+    "pattern": "wirecast",
+    "name": "Wirecast"
+  },
+  {
+    "pattern": "ffmpeg|libx264|lavf|librtmp|libav",
+    "name": "FFmpeg / libRTMP"
+  },
+  {
+    "pattern": "fmle|flash media live encoder",
+    "name": "Adobe FMLE"
+  },
+  {
+    "pattern": "prism",
+    "name": "PRISM Live Studio"
+  },
+  {
+    "pattern": "kasa[_-]?win",
+    "name": "小红书 PC 开播工具（Kasa·Windows）"
+  },
+  {
+    "pattern": "kasa[_-]?mac",
+    "name": "小红书 PC 开播工具（Kasa·macOS）"
+  },
+  {
+    "pattern": "kasa[_-]?(ios|iphone)",
+    "name": "小红书 App 手机开播（iOS）"
+  },
+  {
+    "pattern": "kasa[_-]?android",
+    "name": "小红书 App 手机开播（Android）"
+  },
+  {
+    "pattern": "\\bkasa\\b",
+    "name": "小红书开播工具（Kasa）"
+  },
+  {
+    "pattern": "xiaohongshu|xhs[-_ ]?(live|push|client)|redlive",
+    "name": "小红书直播组件"
+  },
+  {
+    "pattern": "bytedmediasdk|bytedance|bytemedia",
+    "name": "字节系推流组件（第三方工具）"
+  },
+  {
+    "pattern": "tencent|txlive|rtmp.*sdk",
+    "name": "腾讯云直播 SDK"
+  },
+  {
+    "pattern": "agora",
+    "name": "声网 Agora SDK"
+  },
+  {
+    "pattern": "volc|volcengine|ve\\s*live",
+    "name": "火山引擎直播 SDK"
+  },
+  {
+    "pattern": "arduino|h5\\s*live",
+    "name": "H5 直播（浏览器推流）"
+  }
+]

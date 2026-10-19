@@ -1,0 +1,1104 @@
+{
+  "_comment": "字段描述和值映射。每个字段包含 description（中文说明）和 values（常见值的中文解释）",
+
+  "app_id": {
+    "description": "客户端/来源应用标识（判断开播渠道的关键字段）",
+    "values": {
+      "1128": "抖音主站 App",
+      "2079": "抖音直播伴侣（PC 推流工具）",
+      "1129": "今日头条",
+      "1130": "西瓜视频",
+      "2329": "抖音火山版",
+      "1364": "剪映",
+      "1372": "皮皮虾",
+      "1340": "懂车帝",
+      "1112": "抖音极速版",
+      "8663": "抖音直播伴侣（PC 端，新版 app_id）",
+      "5666": "抖音 PC 端/网页版",
+      "5656": "抖音 PC 端/网页版（旧）",
+      "5430": "抖音商家后台",
+      "5399": "抖音企业号",
+      "3878": "抖店商家版",
+      "3529": "抖音直播伴侣（Mac 端）"
+    }
+  },
+  "client_version": {
+    "description": "客户端版本号（整数编码，如 120105 = v12.1.5）",
+    "values": {}
+  },
+  "live_type_third_party": {
+    "description": "是否使用第三方推流",
+    "values": {
+      "true": "是，第三方推流（OBS/vMix/专业编码器等）",
+      "false": "否，使用抖音官方客户端/直播伴侣推流",
+      "1": "是，第三方推流",
+      "0": "否，官方推流"
+    }
+  },
+  "live_type_normal": {
+    "description": "是否为常规手机直播",
+    "values": {
+      "true": "是，常规手机开播",
+      "false": "否"
+    }
+  },
+  "live_type_official": {
+    "description": "是否为官方活动直播",
+    "values": {
+      "true": "是，官方活动直播",
+      "false": "否"
+    }
+  },
+  "live_type_sandbox": {
+    "description": "是否为沙盒/测试直播",
+    "values": {
+      "true": "是，沙盒环境",
+      "false": "否"
+    }
+  },
+  "live_type_audio": {
+    "description": "是否为纯语音直播",
+    "values": {
+      "true": "是，语音直播",
+      "false": "否"
+    }
+  },
+  "live_type_linkmic": {
+    "description": "是否为连麦直播",
+    "values": {
+      "true": "是，正在连麦",
+      "false": "否"
+    }
+  },
+  "live_type_vs_live": {
+    "description": "是否为 PK/对战直播",
+    "values": {
+      "true": "是，PK 对战直播",
+      "false": "否"
+    }
+  },
+  "live_type_screenshot": {
+    "description": "是否为截图直播",
+    "values": {
+      "true": "是，截图直播",
+      "false": "否"
+    }
+  },
+  "live_type_vs_premiere": {
+    "description": "是否为预告直播",
+    "values": {
+      "true": "是，预告直播",
+      "false": "否"
+    }
+  },
+  "stream_url": {
+    "description": "直播流地址对象（含多清晰度拉流 URL）",
+    "values": {}
+  },
+  "provider_name": {
+    "description": "推流服务商名称",
+    "values": {
+      "腾讯云": "CDN 由腾讯云提供",
+      "阿里云": "CDN 由阿里云提供",
+      "火山引擎": "CDN 由火山引擎（字节跳动）提供",
+      "百度云": "CDN 由百度云提供",
+      "华为云": "CDN 由华为云提供"
+    }
+  },
+  "software": {
+    "description": "推流软件标识",
+    "values": {
+      "obs_output": "OBS Studio 推流",
+      "live_core": "抖音直播伴侣（PC 端内置推流核心）",
+      "FMLE": "Adobe Flash Media Live Encoder",
+      "vmix": "vMix 专业直播制作软件",
+      "XSplitBroadcaster": "XSplit Broadcaster",
+      "ffmpeg": "FFmpeg 命令行推流",
+      "streamlab": "Streamlabs",
+      "live": "抖音 App 内置推流"
+    }
+  },
+  "push_url": {
+    "description": "推流地址（主播端使用，观众侧通常为空）",
+    "values": {}
+  },
+  "flashVer": {
+    "description": "推流端编码器/Flash 版本标识（可识别推流软件）",
+    "values": {
+      "FMLE/3.0": "Adobe Flash Media Live Encoder 3.0",
+      "obs-output": "OBS Studio 内置输出模块",
+      "live_core": "抖音直播伴侣推流核心"
+    }
+  },
+  "video_codec": {
+    "description": "视频编码格式",
+    "values": {
+      "h264": "H.264 / AVC（兼容性最广）",
+      "h265": "H.265 / HEVC（更高压缩率）",
+      "av1": "AV1（新一代编码，抖音部分场景使用）",
+      "vp9": "VP9（Google 开发，较少见）"
+    }
+  },
+  "encoder": {
+    "description": "编码器标识",
+    "values": {
+      "obs_output": "OBS Studio 输出模块",
+      "live_core": "抖音直播伴侣编码器",
+      "Fab FMLE 3.0": "Adobe Flash Media Live Encoder 3.0",
+      "x264": "x264 开源 H.264 编码器",
+      "NVENC": "NVIDIA 硬件编码器",
+      "AMF": "AMD 硬件编码器",
+      "QuickSync": "Intel Quick Sync 硬件编码器"
+    }
+  },
+  "third_party": {
+    "description": "是否第三方推流（布尔值）",
+    "values": {
+      "true": "是，第三方推流",
+      "false": "否，官方推流"
+    }
+  },
+  "stream_provider": {
+    "description": "推流链路提供商标识",
+    "values": {
+      "0": "抖音官方/默认链路",
+      "1": "第三方推流链路"
+    }
+  },
+  "flv_pull_url": {
+    "description": "FLV 格式拉流地址（观众端拉取直播流用）",
+    "values": {}
+  },
+  "rtmp_push_url": {
+    "description": "RTMP 推流地址（主播端推流目标）",
+    "values": {}
+  },
+  "resolution": {
+    "description": "视频分辨率",
+    "values": {}
+  },
+  "width": {
+    "description": "视频宽度（像素）",
+    "values": {}
+  },
+  "height": {
+    "description": "视频高度（像素）",
+    "values": {}
+  },
+  "status": {
+    "description": "直播间状态",
+    "values": {
+      "2": "直播中",
+      "4": "已结束",
+      "3": "暂停/中断",
+      "1": "准备中"
+    }
+  },
+  "title": {
+    "description": "直播间标题",
+    "values": {}
+  },
+  "user_count": {
+    "description": "当前在线观看人数",
+    "values": {}
+  },
+  "owner": {
+    "description": "主播信息对象",
+    "values": {}
+  },
+  "room_id": {
+    "description": "内部房间 ID（长整型，系统唯一标识）",
+    "values": {}
+  },
+  "web_rid": {
+    "description": "Web 端房间号（URL 中显示的数字）",
+    "values": {}
+  },
+  "os_type": {
+    "description": "主播端操作系统类型",
+    "values": {
+      "0": "未知/未上报",
+      "1": "iOS",
+      "2": "Android",
+      "3": "Windows / PC",
+      "4": "macOS",
+      "5": "Linux"
+    }
+  },
+  "orientation": {
+    "description": "画面方向",
+    "values": {
+      "0": "竖屏（9:16）",
+      "1": "横屏（16:9）"
+    }
+  },
+  "layout": {
+    "description": "直播间布局样式",
+    "values": {
+      "0": "默认布局",
+      "1": "横屏布局",
+      "2": "全屏布局"
+    }
+  },
+  "cell_style": {
+    "description": "直播间卡片样式",
+    "values": {
+      "0": "默认",
+      "1": "竖屏",
+      "2": "横屏",
+      "3": "全屏"
+    }
+  },
+  "business_live": {
+    "description": "是否为电商直播",
+    "values": {
+      "0": "否",
+      "1": "是，电商带货直播"
+    }
+  },
+  "has_commerce_goods": {
+    "description": "直播间是否挂有商品",
+    "values": {
+      "true": "是，已挂商品",
+      "false": "否"
+    }
+  },
+  "id": {
+    "description": "房间 ID（同 room_id）",
+    "values": {}
+  },
+  "id_str": {
+    "description": "房间 ID 字符串形式",
+    "values": {}
+  },
+  "create_time": {
+    "description": "直播间创建时间（Unix 时间戳，秒）",
+    "values": {}
+  },
+  "start_time": {
+    "description": "直播开始时间（Unix 时间戳，秒）",
+    "values": {}
+  },
+  "finish_time": {
+    "description": "直播结束时间（Unix 时间戳，秒）",
+    "values": {}
+  },
+  "last_ping_time": {
+    "description": "最后一次心跳时间（Unix 时间戳，秒）",
+    "values": {}
+  },
+  "like_count": {
+    "description": "直播间点赞总数",
+    "values": {}
+  },
+  "popularity": {
+    "description": "人气值（抖音内部计算的热度指标）",
+    "values": {}
+  },
+  "web_count": {
+    "description": "Web 端观看人数",
+    "values": {}
+  },
+  "group_id": {
+    "description": "粉丝群 ID（0 表示无粉丝群）",
+    "values": {}
+  },
+  "live_id": {
+    "description": "直播会话 ID（每次开播生成）",
+    "values": {
+      "1": "标准直播会话"
+    }
+  },
+  "replay": {
+    "description": "是否可回放",
+    "values": {
+      "true": "是，直播结束后可回放",
+      "false": "否"
+    }
+  },
+  "is_replay": {
+    "description": "当前是否为回放",
+    "values": {
+      "true": "是，正在播放回放",
+      "false": "否"
+    }
+  },
+  "game_room_type": {
+    "description": "游戏直播类型",
+    "values": {
+      "0": "非游戏直播"
+    }
+  },
+  "finish_reason": {
+    "description": "直播结束原因",
+    "values": {
+      "0": "正常结束/未结束",
+      "1": "主播主动结束",
+      "2": "异常中断"
+    }
+  },
+  "mosaic_status": {
+    "description": "马赛克/模糊状态",
+    "values": {
+      "0": "正常",
+      "1": "马赛克/模糊"
+    }
+  },
+  "room_audit_status": {
+    "description": "直播间审核状态",
+    "values": {
+      "0": "正常/未审核",
+      "1": "审核中",
+      "2": "审核未通过"
+    }
+  },
+  "anchor_tab_type": {
+    "description": "主播标签页类型",
+    "values": {
+      "0": "默认"
+    }
+  },
+  "linkmic_display_type": {
+    "description": "连麦显示类型",
+    "values": {
+      "0": "未连麦",
+      "1": "画中画",
+      "2": "左右分屏"
+    }
+  },
+  "linkmic_layout": {
+    "description": "连麦布局模式",
+    "values": {
+      "0": "无连麦",
+      "1": "上下布局",
+      "2": "左右布局"
+    }
+  },
+  "stream_close_time": {
+    "description": "推流关闭时间（Unix 时间戳，0 表示未关闭）",
+    "values": {}
+  },
+  "stream_id": {
+    "description": "推流会话 ID",
+    "values": {}
+  },
+  "stream_id_str": {
+    "description": "推流会话 ID（字符串形式）",
+    "values": {}
+  },
+  "owner_user_id": {
+    "description": "主播用户 ID",
+    "values": {}
+  },
+  "search_id": {
+    "description": "搜索索引 ID",
+    "values": {}
+  },
+  "share_url": {
+    "description": "直播间分享链接",
+    "values": {}
+  },
+  "fcdn_appid": {
+    "description": "融合 CDN 应用 ID",
+    "values": {
+      "0": "未使用融合 CDN"
+    }
+  },
+  "live_room_mode": {
+    "description": "直播房间模式",
+    "values": {
+      "0": "普通模式",
+      "1": "语音聊天室",
+      "2": "PK 模式"
+    }
+  },
+  "owner_device_id": {
+    "description": "主播设备 ID（0 表示未上报）",
+    "values": {}
+  },
+  "preview_copy": {
+    "description": "直播预告文案",
+    "values": {}
+  },
+  "video_feed_tag": {
+    "description": "视频流标签（如「直播中」）",
+    "values": {}
+  },
+  "title_recommend": {
+    "description": "是否为系统推荐标题",
+    "values": {
+      "true": "是，系统推荐",
+      "false": "否，自定义标题"
+    }
+  },
+  "auto_cover": {
+    "description": "是否自动生成封面",
+    "values": {
+      "0": "否",
+      "1": "是"
+    }
+  },
+  "is_official_channel_room": {
+    "description": "是否为官方频道直播间",
+    "values": {
+      "true": "是",
+      "false": "否"
+    }
+  },
+  "has_promotion_games": {
+    "description": "是否启用互动游戏/促销",
+    "values": {
+      "0": "否",
+      "1": "是"
+    }
+  },
+  "base_category": {
+    "description": "直播大类 ID",
+    "values": {}
+  },
+  "category": {
+    "description": "直播分类 ID",
+    "values": {}
+  },
+  "enable_room_perspective": {
+    "description": "是否启用房间视角功能",
+    "values": {
+      "true": "是",
+      "false": "否"
+    }
+  },
+  "AnchorABMap": {
+    "description": "主播 AB 测试参数映射（内部实验分组配置）",
+    "values": {}
+  },
+  "acquaintance_status": {
+    "description": "熟人/好友可见状态（控制直播是否对好友可见）",
+    "values": {
+      "0": "默认（公开）",
+      "1": "仅好友可见",
+      "2": "互相关注可见"
+    }
+  },
+  "admin_user_ids": {
+    "description": "直播间管理员用户 ID 列表（房管）",
+    "values": {}
+  },
+  "admin_user_open_ids": {
+    "description": "直播间管理员 Open ID 列表（房管的开放平台 ID）",
+    "values": {}
+  },
+  "anchor_scheduled_time_text": {
+    "description": "主播预约开播时间的展示文本（如「今天 20:00」）",
+    "values": {}
+  },
+  "anchor_share_text": {
+    "description": "主播自定义分享文案",
+    "values": {}
+  },
+  "assist_label_list": {
+    "description": "助播/辅助标签列表",
+    "values": {}
+  },
+  "auth_city": {
+    "description": "认证城市（主播认证信息中的城市字段）",
+    "values": {}
+  },
+  "book_end_time": {
+    "description": "预约直播结束时间（Unix 时间戳，0 表示未设置）",
+    "values": {}
+  },
+  "book_time": {
+    "description": "预约直播开始时间（Unix 时间戳，0 表示无预约）",
+    "values": {}
+  },
+  "challenge_info": {
+    "description": "挑战赛/活动信息对象（关联平台挑战活动）",
+    "values": {}
+  },
+  "city_top_distance": {
+    "description": "同城排行距离（与观看者的距离，用于同城推荐）",
+    "values": {}
+  },
+  "comment_box": {
+    "description": "评论框配置（弹幕输入框的样式和功能设置）",
+    "values": {}
+  },
+  "comment_name_mode": {
+    "description": "评论昵称显示模式",
+    "values": {
+      "0": "显示昵称",
+      "1": "匿名模式",
+      "2": "粉丝团昵称"
+    }
+  },
+  "common_label_list": {
+    "description": "通用标签列表（直播间公开展示的标签）",
+    "values": {}
+  },
+  "content_label": {
+    "description": "内容标签（直播内容分类标记）",
+    "values": {}
+  },
+  "content_tag": {
+    "description": "内容标签字符串（逗号分隔的内容分类标签）",
+    "values": {}
+  },
+  "cover": {
+    "description": "直播间封面图对象（含图片 URL 和尺寸信息）",
+    "values": {}
+  },
+  "danmaku_detail": {
+    "description": "弹幕详细信息配置（弹幕显示规则、过滤策略等）",
+    "values": {}
+  },
+  "deco_list": {
+    "description": "直播间装饰/挂件列表（边框、角标、头饰等）",
+    "values": {}
+  },
+  "distance": {
+    "description": "距离文本（与观看者的距离展示，如「1.2km」）",
+    "values": {}
+  },
+  "distance_city": {
+    "description": "距离城市（观看者所在城市与主播的距离描述）",
+    "values": {}
+  },
+  "distance_km": {
+    "description": "距离（千米，数值型，用于排序同城推荐）",
+    "values": {}
+  },
+  "dynamic_cover_dict": {
+    "description": "动态封面图元数据（含动态封面 URL 和尺寸）",
+    "values": {}
+  },
+  "dynamic_cover_uri": {
+    "description": "动态封面图资源 URI",
+    "values": {}
+  },
+  "extra": {
+    "description": "扩展配置对象（包含大量内部开关和实验参数，如 is_sandbox、vr_type 等）",
+    "values": {}
+  },
+  "fans_group_admin_user_ids": {
+    "description": "粉丝团管理员用户 ID 列表",
+    "values": {}
+  },
+  "fans_group_admin_user_open_ids": {
+    "description": "粉丝团管理员 Open ID 列表",
+    "values": {}
+  },
+  "feed_room_label": {
+    "description": "信息流中的直播间标签图（推荐流中显示的标签图片）",
+    "values": {}
+  },
+  "filter_words": {
+    "description": "弹幕过滤词列表（被屏蔽的关键词）",
+    "values": {}
+  },
+  "finish_url": {
+    "description": "直播结束后跳转 URL（结束页面的链接）",
+    "values": {}
+  },
+  "follow_msg_style": {
+    "description": "关注消息样式（关注主播时弹出的消息样式编号）",
+    "values": {}
+  },
+  "forum_extra_data": {
+    "description": "论坛/社区扩展数据（直播间关联的讨论区数据）",
+    "values": {}
+  },
+  "gift_msg_style": {
+    "description": "礼物消息样式（礼物通知的展示样式编号）",
+    "values": {}
+  },
+  "group_source": {
+    "description": "群组来源标识（标记直播间的流量来源渠道）",
+    "values": {
+      "0": "默认来源",
+      "1": "粉丝群",
+      "2": "推荐",
+      "3": "关注"
+    }
+  },
+  "guide_button": {
+    "description": "引导按钮配置（直播间内浮动的引导按钮，如「关注」「送礼」）",
+    "values": {}
+  },
+  "highlight": {
+    "description": "高光时刻配置（直播精彩片段自动剪辑相关设置）",
+    "values": {}
+  },
+  "hot_sentence_info": {
+    "description": "热门话题/句子信息（当前直播间关联的热搜话题）",
+    "values": {}
+  },
+  "introduction": {
+    "description": "直播间简介/介绍文本",
+    "values": {}
+  },
+  "is_need_check_list": {
+    "description": "是否需要审核名单（控制进入直播间的权限）",
+    "values": {
+      "true": "是，需要审核",
+      "false": "否"
+    }
+  },
+  "is_show_inquiry_ball": {
+    "description": "是否显示咨询球/问诊入口（医疗类直播专用）",
+    "values": {
+      "true": "是",
+      "false": "否"
+    }
+  },
+  "is_show_user_card_switch": {
+    "description": "是否显示用户卡片切换按钮（直播间内的用户信息面板开关）",
+    "values": {
+      "true": "是",
+      "false": "否"
+    }
+  },
+  "item_explicit_info": {
+    "description": "商品/物品明示信息（电商直播中的商品展示配置）",
+    "values": {}
+  },
+  "linker_map": {
+    "description": "连麦参与者映射（连麦场景中各参与者的布局和流信息）",
+    "values": {}
+  },
+  "live_distribution": {
+    "description": "直播分发策略标识（控制直播间在平台的推荐分发范围）",
+    "values": {
+      "0": "正常分发",
+      "1": "限制分发",
+      "2": "仅粉丝可见"
+    }
+  },
+  "live_platform_source": {
+    "description": "直播平台来源标识（标记开播使用的平台入口）",
+    "values": {
+      "0": "抖音 App",
+      "1": "直播伴侣",
+      "2": "第三方工具"
+    }
+  },
+  "living_room_attrs": {
+    "description": "直播间属性配置对象（包含各种功能开关和展示属性）",
+    "values": {}
+  },
+  "location": {
+    "description": "主播定位地点（如「北京市·朝阳区」）",
+    "values": {}
+  },
+  "lottery_finish_time": {
+    "description": "抽奖结束时间（Unix 时间戳，0 表示无抽奖）",
+    "values": {}
+  },
+  "luckymoney_num": {
+    "description": "红包数量（直播间当前可领取的红包数）",
+    "values": {}
+  },
+  "mosaic_tip": {
+    "description": "马赛克提示文案（画面被模糊时显示的原因说明）",
+    "values": {}
+  },
+  "official_channel_open_id": {
+    "description": "官方频道 Open ID（官方频道直播间的开放平台标识）",
+    "values": {}
+  },
+  "official_channel_uid": {
+    "description": "官方频道用户 ID（官方频道直播间的用户标识）",
+    "values": {}
+  },
+  "owner_open_id": {
+    "description": "主播 Open ID（开放平台唯一标识符）",
+    "values": {}
+  },
+  "pack_meta": {
+    "description": "打包元数据（直播间资源包/插件的配置信息）",
+    "values": {}
+  },
+  "paid_live_data": {
+    "description": "付费直播数据对象（付费直播的价格、购买状态等）",
+    "values": {}
+  },
+  "popularity_str": {
+    "description": "人气值字符串形式（带格式的人气展示文本，如「1.2万」）",
+    "values": {}
+  },
+  "pre_enter_time": {
+    "description": "预进入时间（用户预热/预约进入直播间的时间戳）",
+    "values": {}
+  },
+  "preview_flow_tag": {
+    "description": "预览流标签（直播间在推荐流中的预览标记）",
+    "values": {}
+  },
+  "private_info": {
+    "description": "私密信息对象（仅对主播可见的内部管理数据）",
+    "values": {}
+  },
+  "ranklist_audience_type": {
+    "description": "排行榜观众类型",
+    "values": {
+      "0": "全部观众",
+      "1": "仅粉丝",
+      "2": "仅付费用户"
+    }
+  },
+  "real_distance": {
+    "description": "实际距离（精确距离数值，用于同城定位）",
+    "values": {}
+  },
+  "redpacket_audience_auth": {
+    "description": "红包观众权限",
+    "values": {
+      "0": "所有人可领",
+      "1": "仅粉丝可领",
+      "2": "仅关注者可领"
+    }
+  },
+  "relation_tag": {
+    "description": "关系标签（标记观众与主播的关系类型）",
+    "values": {}
+  },
+  "replay_location": {
+    "description": "回放资源地址（直播结束后回放视频的存储位置）",
+    "values": {}
+  },
+  "room_auth": {
+    "description": "房间权限配置对象（控制各种功能的访问权限）",
+    "values": {}
+  },
+  "room_create_ab_param": {
+    "description": "房间创建 AB 测试参数（实验分组标记字符串）",
+    "values": {}
+  },
+  "room_layout": {
+    "description": "房间布局类型（区别于 layout，此为更高层级的布局控制）",
+    "values": {
+      "0": "默认布局",
+      "1": "竖屏布局",
+      "2": "横屏布局",
+      "3": "全屏布局"
+    }
+  },
+  "room_tabs": {
+    "description": "房间标签页列表（直播间底部/侧边的功能标签页配置）",
+    "values": {}
+  },
+  "room_tag": {
+    "description": "房间标签（用于分类和推荐的标签字符串）",
+    "values": {}
+  },
+  "room_view_stats": {
+    "description": "房间观看统计对象（累计观看人数、峰值人数等详细统计）",
+    "values": {}
+  },
+  "screen_capture_sharing_title": {
+    "description": "屏幕录制分享标题（录屏直播时的分享标题）",
+    "values": {}
+  },
+  "scroll_config": {
+    "description": "滑动/滚动配置（直播间上下滑动切换的交互配置）",
+    "values": {}
+  },
+  "sell_goods": {
+    "description": "是否在售卖商品（电商直播商品售卖状态）",
+    "values": {
+      "true": "是，正在售卖",
+      "false": "否"
+    }
+  },
+  "share_msg_style": {
+    "description": "分享消息样式（分享直播间时的消息卡片样式编号）",
+    "values": {}
+  },
+  "sharing_music_id_list": {
+    "description": "分享音乐 ID 列表（直播间使用的背景音乐标识）",
+    "values": {}
+  },
+  "short_title": {
+    "description": "短标题（直播间在推荐流中展示的精简标题）",
+    "values": {}
+  },
+  "short_touch_area_config": {
+    "description": "短触区域配置（直播间触摸交互区域的热点配置）",
+    "values": {}
+  },
+  "sofa_layout": {
+    "description": "沙发布局（贵宾席/前排观众的展示布局）",
+    "values": {
+      "0": "默认",
+      "1": "启用沙发位"
+    }
+  },
+  "stamps": {
+    "description": "贴纸/印记列表（直播间使用的动态贴纸效果）",
+    "values": {}
+  },
+  "stats": {
+    "description": "直播间统计对象（含总观看人数、礼物数、关注数、收入等）",
+    "values": {}
+  },
+  "sun_daily_icon_content": {
+    "description": "日光签到图标内容（每日签到/阳光值的展示文案）",
+    "values": {}
+  },
+  "tags": {
+    "description": "直播标签数组（直播间的分类标签列表）",
+    "values": {}
+  },
+  "top_fans": {
+    "description": "排行榜粉丝列表（直播间贡献榜/粉丝榜前几名）",
+    "values": {}
+  },
+  "toutiao_cover_recommend_level": {
+    "description": "今日头条封面推荐等级（控制封面在头条端的推荐权重）",
+    "values": {
+      "0": "默认",
+      "1": "低",
+      "2": "中",
+      "3": "高"
+    }
+  },
+  "toutiao_title_recommend_level": {
+    "description": "今日头条标题推荐等级（控制标题在头条端的推荐权重）",
+    "values": {
+      "0": "默认",
+      "1": "低",
+      "2": "中",
+      "3": "高"
+    }
+  },
+  "upper_right_widget_data_list": {
+    "description": "右上角小组件数据列表（直播间右上角的功能入口按钮列表）",
+    "values": {}
+  },
+  "use_filter": {
+    "description": "是否启用美颜滤镜",
+    "values": {
+      "true": "是，已启用滤镜",
+      "false": "否"
+    }
+  },
+  "user_share_text": {
+    "description": "用户分享文案（观众分享直播间时的默认文案）",
+    "values": {}
+  },
+  "vertical_cover_uri": {
+    "description": "竖版封面图资源 URI（竖屏直播专用封面）",
+    "values": {}
+  },
+  "vid": {
+    "description": "视频 ID（直播流的唯一视频标识符）",
+    "values": {}
+  },
+  "visibility_range": {
+    "description": "可见范围",
+    "values": {
+      "0": "公开可见",
+      "1": "仅粉丝可见",
+      "2": "仅指定用户可见",
+      "3": "仅自己可见"
+    }
+  },
+  "vs_main_replay_id": {
+    "description": "对战回放主 ID（PK 对战直播的回放标识）",
+    "values": {}
+  },
+  "vs_roles": {
+    "description": "对战角色列表（PK 对战中各参与者的角色信息）",
+    "values": {}
+  },
+  "wait_copy": {
+    "description": "等待文案（主播未开播时显示的等待提示文本）",
+    "values": {}
+  },
+  "webcast_comment_tcs": {
+    "description": "弹幕审核配置（TCS 风控系统对弹幕的审核策略）",
+    "values": {}
+  },
+  "webcast_sdk_version": {
+    "description": "Webcast SDK 版本号（直播功能使用的 SDK 版本）",
+    "values": {}
+  },
+  "with_aggregate_column": {
+    "description": "是否启用聚合栏（直播间底部的多功能聚合展示栏）",
+    "values": {
+      "true": "是",
+      "false": "否"
+    }
+  },
+  "with_draw_something": {
+    "description": "是否启用画画猜功能（互动小游戏）",
+    "values": {
+      "true": "是",
+      "false": "否"
+    }
+  },
+  "with_ktv": {
+    "description": "是否启用 KTV 模式（K 歌互动功能）",
+    "values": {
+      "true": "是",
+      "false": "否"
+    }
+  },
+  "fansclub_msg_style": {
+    "description": "粉丝团消息样式（粉丝团相关通知的展示样式编号）",
+    "values": {}
+  },
+  "with_linkmic": {
+    "description": "是否支持连麦功能",
+    "values": {
+      "true": "是，已启用连麦",
+      "false": "否"
+    }
+  },
+  "stream_orientation": {
+    "description": "推流画面方向标识",
+    "values": {
+      "0": "竖屏",
+      "1": "横屏",
+      "2": "方形"
+    }
+  },
+  "push_stream_type": {
+    "description": "推流类型（区分常规/屏幕共享/游戏推流等）",
+    "values": {
+      "0": "常规推流"
+    }
+  },
+  "multi_stream_scene": {
+    "description": "多流场景标识（多清晰度转码策略）",
+    "values": {
+      "0": "默认（服务端转码多清晰度）"
+    }
+  },
+  "hardware_encode": {
+    "description": "是否使用硬件编码（GPU 加速）",
+    "values": {
+      "true": "是，硬件编码",
+      "false": "否，软件编码"
+    }
+  },
+  "default_resolution": {
+    "description": "默认清晰度标识（原始推流的清晰度等级）",
+    "values": {
+      "FULL_HD1": "原画/蓝光",
+      "HD1": "超清",
+      "SD1": "高清",
+      "SD2": "标清"
+    }
+  },
+  "candidate_resolution": {
+    "description": "可用清晰度列表（观众可选择的清晰度等级）",
+    "values": {}
+  },
+  "stream_control_type": {
+    "description": "流控类型（码率自适应策略）",
+    "values": {
+      "0": "默认（服务端控制）"
+    }
+  },
+  "live_core_sdk_data": {
+    "description": "直播核心 SDK 数据（含质量选项、CDN 路由等播放器配置）",
+    "values": {}
+  },
+  "nickname": {
+    "description": "主播昵称",
+    "values": {}
+  },
+  "display_id": {
+    "description": "主播抖音号（用户自定义的展示 ID）",
+    "values": {}
+  },
+  "short_id": {
+    "description": "主播短 ID（数字形式的简短标识）",
+    "values": {}
+  },
+  "sec_uid": {
+    "description": "主播加密 UID（开放平台安全标识符）",
+    "values": {}
+  },
+  "signature": {
+    "description": "主播个人签名/简介",
+    "values": {}
+  },
+  "gender": {
+    "description": "主播性别",
+    "values": {
+      "0": "未知",
+      "1": "男",
+      "2": "女"
+    }
+  },
+  "verified": {
+    "description": "是否已认证（实名/企业认证）",
+    "values": {
+      "true": "已认证",
+      "false": "未认证"
+    }
+  },
+  "follow_info": {
+    "description": "关注信息对象（含粉丝数、关注数等）",
+    "values": {}
+  },
+  "pay_grade": {
+    "description": "充值等级信息（用户消费等级对象）",
+    "values": {}
+  },
+  "framerate": {
+    "description": "视频帧率（fps）",
+    "values": {}
+  },
+  "videocodecid": {
+    "description": "FLV 视频编码器 ID（onMetaData 中的编码标识）",
+    "values": {
+      "2": "Sorenson H.263",
+      "4": "VP6",
+      "7": "H.264/AVC",
+      "8": "H.265/HEVC",
+      "12": "H.265/HEVC（字节扩展）"
+    }
+  },
+  "audiocodecid": {
+    "description": "FLV 音频编码器 ID",
+    "values": {
+      "2": "MP3",
+      "10": "AAC",
+      "11": "Speex"
+    }
+  },
+  "videodatarate": {
+    "description": "视频码率（kbps，onMetaData 中声明）",
+    "values": {}
+  },
+  "audiodatarate": {
+    "description": "音频码率（kbps，onMetaData 中声明）",
+    "values": {}
+  },
+  "duration": {
+    "description": "流时长（秒，直播流通常为 0）",
+    "values": {}
+  },
+  "flv_pull_url_params": {
+    "description": "FLV 拉流 URL 附加参数（各清晰度的请求参数）",
+    "values": {}
+  },
+  "hls_pull_url_params": {
+    "description": "HLS 拉流 URL 参数（含 VCodec、网络自适应等播放器参数）",
+    "values": {}
+  },
+  "hls_pull_url_map": {
+    "description": "HLS 格式拉流地址映射（各清晰度的 m3u8 地址）",
+    "values": {}
+  },
+  "resolution_name": {
+    "description": "清晰度名称映射（清晰度 ID → 中文名称）",
+    "values": {}
+  },
+  "resolution_select_panel_resident": {
+    "description": "清晰度选择面板常驻项（控制清晰度按钮的默认展示）",
+    "values": {}
+  }
+}

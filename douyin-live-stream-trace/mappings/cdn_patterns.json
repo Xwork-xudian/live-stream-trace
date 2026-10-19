@@ -1,0 +1,15 @@
+[
+  {"keyword": "third", "name": "第三方推流域名"},
+  {"keyword": "byteimg", "name": "字节 CDN"},
+  {"keyword": "bytedance", "name": "字节跳动"},
+  {"keyword": "byte", "name": "字节系/CDN"},
+  {"keyword": "douyin", "name": "抖音"},
+  {"keyword": "ttlive", "name": "TikTok Live / 字节直播"},
+  {"keyword": "qcloud", "name": "腾讯云 CDN"},
+  {"keyword": "tencent", "name": "腾讯云"},
+  {"keyword": "alicdn", "name": "阿里云 CDN"},
+  {"keyword": "aliyun", "name": "阿里云"},
+  {"keyword": "ali", "name": "阿里云/阿里 CDN"},
+  {"keyword": "cloudflare", "name": "Cloudflare"},
+  {"keyword": "akamai", "name": "Akamai"}
+]

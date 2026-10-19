@@ -1,0 +1,13 @@
+# live-stream-trace — Python 依赖
+requests>=2.31
+playwright>=1.40
+xhs>=0.2.13
+
+# 音画同步「内容级（人脸嘴型）」检测需要 numpy + opencv（Haar 人脸检测）。
+# 若缺失，嘴型检测会自动降级并只在报告中提示，不影响其它分析。
+# 国内网络建议使用镜像安装（PyPI 直连常被限速）：
+#   ./.venv/bin/python -m pip install -i https://mirrors.aliyun.com/pypi/simple/ \
+#       --trusted-host mirrors.aliyun.com numpy opencv-python-headless
+# 注意：opencv 5.x 已移除内置 Haar 级联，请使用 4.x（如 4.13.0.92）。
+numpy>=1.26
+opencv-python-headless>=4.9,<5

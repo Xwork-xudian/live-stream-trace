@@ -1,0 +1,122 @@
+[
+  {
+    "key": "only_audio",
+    "value": "1",
+    "enabled": true,
+    "description": "请求纯音频流（无视频轨）",
+    "scope": "audio_only",
+    "source": "手动观察 / 服务端协议"
+  },
+  {
+    "key": "eupf_relay_mode",
+    "value": "err",
+    "enabled": true,
+    "description": "EUPF 中继模式，配合 only_audio 使用",
+    "scope": "audio_only",
+    "source": "手动观察 / 服务端协议"
+  },
+  {
+    "key": "rtm_expr_tag",
+    "value": "android_rtm_online_wifi_latency_opt",
+    "enabled": true,
+    "description": "RTM 延迟优化实验标签（WiFi 场景低延迟）",
+    "scope": "audio_only",
+    "source": "手动观察 / Android 客户端"
+  },
+  {
+    "key": "abr_expr",
+    "value": "4319727_v4",
+    "enabled": false,
+    "description": "码率自适应实验版本标记",
+    "scope": "all",
+    "source": "手动观察 / Android 客户端"
+  },
+  {
+    "key": "abr_pts",
+    "value": "-500",
+    "enabled": false,
+    "description": "码率策略偏移值（负值倾向更低码率）",
+    "scope": "all",
+    "source": "手动观察 / Android 客户端"
+  },
+  {
+    "key": "en_abs",
+    "value": "1",
+    "enabled": false,
+    "description": "启用 A/B 实验开关",
+    "scope": "all",
+    "source": "手动观察 / Android 客户端"
+  },
+  {
+    "key": "m_p2p",
+    "value": "v1",
+    "enabled": false,
+    "description": "P2P 传输功能标记",
+    "scope": "all",
+    "source": "手动观察 / Android 客户端"
+  },
+  {
+    "key": "fast_p2p",
+    "value": "v1",
+    "enabled": false,
+    "description": "快速 P2P 模式",
+    "scope": "all",
+    "source": "手动观察 / Android 客户端"
+  },
+  {
+    "key": "noon_fp2p",
+    "value": "v3",
+    "enabled": false,
+    "description": "非 P2P 回退策略版本",
+    "scope": "all",
+    "source": "手动观察 / Android 客户端"
+  },
+  {
+    "key": "box_h2p",
+    "value": "v1",
+    "enabled": false,
+    "description": "HTTP/2 推送协议",
+    "scope": "all",
+    "source": "手动观察 / Android 客户端"
+  },
+  {
+    "key": "new_liveplayer",
+    "value": "v1",
+    "enabled": false,
+    "description": "新版直播播放器标记",
+    "scope": "all",
+    "source": "手动观察 / Android 客户端"
+  },
+  {
+    "key": "pt",
+    "value": "v1",
+    "enabled": false,
+    "description": "播放类型标记（play type）",
+    "scope": "all",
+    "source": "手动观察 / Android 客户端"
+  },
+  {
+    "key": "ptag",
+    "value": "v1",
+    "enabled": false,
+    "description": "播放标签（play tag）",
+    "scope": "all",
+    "source": "手动观察 / Android 客户端"
+  },
+  {
+    "key": "fallback_type",
+    "value": "2",
+    "enabled": false,
+    "description": "回退类型（CDN/协议回退策略）",
+    "scope": "all",
+    "source": "手动观察 / Android 客户端"
+  },
+  {
+    "key": "mxipstack",
+    "value": "v2",
+    "enabled": false,
+    "description": "IP 协议栈版本（IPv4/IPv6 双栈策略）",
+    "scope": "all",
+    "source": "手动观察 / Android 客户端"
+  }
+]

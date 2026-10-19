@@ -1,0 +1,12 @@
+
+# 小红书登录 Cookie（勿提交）
+.xhs_cookie
+
+# 本地环境 / 临时产物
+__pycache__/
+.venv/
+tests/.out/
+cookies/
+
+uploads/
+reports/sync_report_*/
