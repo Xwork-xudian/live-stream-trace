@@ -34,11 +34,9 @@
 | 目录 | 定位 | 入口 | 文档 |
 |---|---|---|---|
 | **`live-stream-trace/`** | **主项目**：插件化多平台（抖音 / 小红书 / 哔哩哔哩 / 淘宝 / 京东 / 通用 RTMP）；网页系统：首页报告、`/live` 实时音画延迟监测、`/sync` 上传样本检测 | `./run.sh <链接>`、`./start_web.sh 8899` | [README](live-stream-trace/README.md) |
-| `douyin-live-stream-trace/` | 抖音独立版（前身）：RTMP 推流端抓包、礼物/榜单探针、Playwright 鉴权 | `python analyze_room.py` | [README](douyin-live-stream-trace/README.md) |
-| `xiaohongshu-live-stream-trace/` | 小红书独立版（前身）：Cookie / 档位 / 源流 | `python analyze_room.py` | [README](xiaohongshu-live-stream-trace/README.md) |
+| `douyin-live-stream-trace/` | 抖音独立版：RTMP 推流端抓包、礼物/榜单探针、Playwright 鉴权 | `python analyze_room.py` | [README](douyin-live-stream-trace/README.md) |
+| `xiaohongshu-live-stream-trace/` | 小红书独立版：Cookie / 档位 / 源流 | `python analyze_room.py` | [README](xiaohongshu-live-stream-trace/README.md) |
 | `rtmp-h264-stream-trace/` | 裸 RTMP/RTMPS H.264 源流体检（已以适配器形式并入主项目 `platforms/rtmp.py`） | `./run.sh <rtmp://…>` | [README](rtmp-h264-stream-trace/README.md) |
-| `archive/patches_20261015/` | 一次性改造补丁脚本（**仅本地留档，不随仓库分发**） | — | — |
-| `HANDOVER.md`、`SESSION_HANDOVER_*.md` | 开发交接记录（**仅本地留档，不随仓库分发**） | — | — |
 
 ---
 
@@ -102,33 +100,9 @@ bash tests/verify_unified_rtmp_cli.sh                 # RTMP 全链路（本地�
 
 ---
 
-## 5. 打包、搬运与发布口径
 
-**搬运（保留全部提交历史）**
 
-```bash
-git bundle create live-stream-trace.bundle --all
-# 目标机器上：
-git clone live-stream-trace.bundle live-stream-trace && cd live-stream-trace
-git remote set-url origin <你的仓库地址> && git push -u origin master
-```
-
-**改为「可公开发布」时建议剔除的内容**
-
-| 内容 | 原因 |
-|---|---|
-| `live-stream-trace/tests/media/xhs_room_long.flv`（23MB）、`xhs_room.flv` | 公开直播间抓取的**第三方内容** |
-| `live-stream-trace/docs/frames/*`（真人截图 / 小片段） | 含可辨识的第三方人物画面 |
-| `cookies/`、`captures/`、`reports/` | 个人登录态与本地数据（默认已不入库） |
-
-### 发布时不导出的内容
-
-`HANDOVER.md`、`SESSION_HANDOVER_*.md`、`archive/` 是开发过程留档，公开仓库不包含它们；
-第三方直播样本与真人截图已在下表中列出并被移除。
-
----
-
-## 6. 版权与许可
+## 5. 版权与许可
 
 各子项目 README 均声明 **MIT**。根目录尚未放置统一的 `LICENSE` 文件——补之前需要先确定版权归属人。
 
